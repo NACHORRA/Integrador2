@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La cava Gomez</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <script defer src="js/data.js"></script>
+  <script defer src="js/selectors.js"></script>
+  <script type="module" src="js/pag.js"></script>
+</head>
+
+<body>
+    <header id="main-header">
+        <nav class="navbar">
+          <div class="logo"><img src="assets/ham-svgrepo-com.svg" alt="Logo"></div>
+          <div class="nav_items" id="_items">
+              <a href="index.html">INICIO</a>
+              <a href="#products">PRODUCTOS</a>
+              <a href="contact.html">CONTACTO</a>
+          </div>
+          <div class="nav_toggle" id="_toggle">
+              <span></span> 
+              <span></span>
+              <span></span>
+          </div>
+          <form>
+            <button type="button" id="btn-cart">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                <path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+              </svg>
+            </button>
+          </form>
+        </nav>
+    </header>
+    <div class="cartTab">
+      <h1>Carrito</h1>
+      <div class="listProduct"></div>
+      <div class="listCart"></div>
+      <div class="btn">
+          <button class="close">Cerrar</button>
+          <button class="checkOut">Comprar</button>
+    </div>
+  </div>
+
+    <main>
+      <section id="home">
+        <div class="home-info">
+            <h1>La Cava de Gómez: El arte del buen fiambre</h1>
+        </div>
+        <div class="home-pictures">
+            <div class="home-picture">
+                <img src="assets/jamon.jpeg" alt="Jamon crudo" />
+                <h3>Sabor intenso, tradición en cada lonja.</h3>
+            </div>
+            <div class="home-picture">
+              <img src="assets/cabra.jpg" alt="Queso de cabra" />
+              <h3>Frescura y suavidad que conquistan paladares</h3>
+            </div>
+            <div class="home-picture">
+               <img src="assets/salame.jpg" alt="Salame" />
+               <h3>El toque perfecto de sabor artesanal.</h3>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <h2>Nuestra Misión</h2>
+        <p>
+          En La Cava de Gómez, nos especializamos en llevar a tu mesa los mejores fiambres y embutidos artesanales, elaborados con tradición y pasión. Seleccionamos cada pieza con un compromiso inquebrantable hacia la calidad, ofreciendo productos que destacan por su sabor y frescura. Nuestra tienda online te acerca lo mejor de nuestra cava, para que disfrutes del verdadero placer gourmet en la comodidad de tu hogar. ¡Descubre la excelencia en cada bocado!
+        </p>
+      </section>
+      <section id="products">
+        <h2>Descubre la esencia gourmet en cada uno de nuestros productos.</h2>
+        <ul id="categories">
+          <button id="jamones">Jamones</button>
+          <button id="salames">Salames</button>
+          <button id="quesos">Quesos</button>
+        </ul>
+        <ul id="list"></ul>
+      </section>
+    </main>
+    <footer>
+      <nav>
+        <a href="#">¡Contactanos!</a>
+        <a href="#">Nuestros locales</a>
+        <a href="#">Redes Sociales</a>
+      </nav>
+  </footer>
+</body>
+</html>
