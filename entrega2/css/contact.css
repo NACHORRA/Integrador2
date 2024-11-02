@@ -144,16 +144,32 @@ form.error input.input {
 
 @media (max-width: 700px) {
   .contact {
-      width: 420px;
-  }
-  .redes a {
-    font-size: 1.8rem;
-  }
-  .contact p {
-    font-size: 1.5rem;
+      width: 90%;
+      padding: 20px;
   }
   
+  .contact h1 {
+      font-size: 28px;
+  }
+
+  .redes a {
+    font-size: 1.5rem;
+  }
+
+  .contact p {
+    font-size: 1.2rem;
+  }
+
+  .input-box input {
+      font-size: 16px;
+  }
+
+  .input-box input.button {
+      font-size: 14px;
+  }
 }
+
+
 
 footer {
   height: max-content;
